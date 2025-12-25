@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic News - MediCare Pulse</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+</head>
+<body class="bg-gray-50">
+    <custom-navbar></custom-navbar>
+
+    <main class="container mx-auto px-4 py-20">
+        <!-- News Hero -->
+        <section class="mb-16 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Clinic News & Updates</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Stay informed about our latest services, achievements, and community initiatives</p>
+        </section>
+
+        <!-- Latest News -->
+        <section class="mb-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- News 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="http://static.photos/medical/600x400/5" alt="New Facility" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <span>June 5, 2023</span>
+                            <span class="mx-2">•</span>
+                            <span>Announcement</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Grand Opening of Our New Heidelberg Facility</h3>
+                        <p class="text-gray-600 mb-4">We're excited to announce the opening of our second location in Heidelberg, offering expanded services to the community...</p>
+                        <a href="#" class="text-blue-600 font-medium flex items-center">
+                            Read More
+                            <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- News 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="http://static.photos/medical/600x400/6" alt="New Doctor" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <span>May 20, 2023</span>
+                            <span class="mx-2">•</span>
+                            <span>Team Update</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Welcome Dr. Lisa Wong to Our Ophthalmology Team</h3>
+                        <p class="text-gray-600 mb-4">We're pleased to welcome Dr. Lisa Wong, a renowned ophthalmologist specializing in cataract surgery and retinal diseases...</p>
+                        <a href="#" class="text-blue-600 font-medium flex items-center">
+                            Read More
+                            <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- News 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="http://static.photos/medical/600x400/7" alt="Health Fair" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <span>May 5, 2023</span>
+                            <span class="mx-2">•</span>
+                            <span>Community</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Annual Community Health Fair Results</h3>
+                        <p class="text-gray-600 mb-4">Our free health fair provided screenings and education to over 500 community members this year. See the impact we made together...</p>
+                        <a href="#" class="text-blue-600 font-medium flex items-center">
+                            Read More
+                            <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Press Releases -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-center">Press Releases</h2>
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="divide-y divide-gray-200">
+                    <!-- Press 1 -->
+                    <div class="p-6 hover:bg-gray-50 transition duration-300">
+                        <div class="flex flex-col md:flex-row md:items-center">
+                            <div class="md:w-3/4">
+                                <h3 class="text-xl font-bold mb-1">MediCare Pulse Recognized for Excellence in Patient Care</h3>
+                                <p class="text-gray-600 mb-2">Our clinic has been awarded the 2023 Patient Care Excellence Award by the South African Medical Association...</p>
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <span>April 28, 2023</span>
+                                </div>
+                            </div>
+                            <div class="md:w-1/4 mt-4 md:mt-0 md:text-right">
+                                <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition duration-300">
+                                    View Release
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Press 2 -->
+                    <div class="p-6 hover:bg-gray-50 transition duration-300">
+                        <div class="flex flex-col md:flex-row md:items-center">
+                            <div class="md:w-3/4">
+                                <h3 class="text-xl font-bold mb-1">New Telemedicine Platform Launched</h3>
+                                <p class="text-gray-600 mb-2">We're expanding access to care with our new telemedicine platform, allowing patients to consult with doctors remotely...</p>
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <span>April 15, 2023</span>
+                                </div>
+                            </div>
+                            <div class="md:w-1/4 mt-4 md:mt-0 md:text-right">
+                                <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition duration-300">
+                                    View Release
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Press 3 -->
+                    <div class="p-6 hover:bg-gray-50 transition duration-300">
+                        <div class="flex flex-col md:flex-row md:items-center">
+                            <div class="md:w-3/4">
+                                <h3 class="text-xl font-bold mb-1">Partnership with Local Schools for Health Education</h3>
+                                <p class="text-gray-600 mb-2">We're proud to announce a new partnership with local schools to provide health education programs for students...</p>
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <span>March 30, 2023</span>
+                                </div>
+                            </div>
+                            <div class="md:w-1/4 mt-4 md:mt-0 md:text-right">
+                                <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition duration-300">
+                                    View Release
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Media Inquiries -->
+        <section class="bg-gradient-to-r from-blue-500 to-teal-500 text-white rounded-xl p-8 text-center">
+            <h2 class="text-3xl font-bold mb-4">Media Inquiries</h2>
+            <p class="text-xl mb-6 max-w-2xl mx-auto">Journalists and media professionals can contact our communications team.</p>
+            <a href="pages/contact.html" class="inline-block bg-white text-blue-600 hover:bg-blue-50 px-8 py-3 rounded-lg font-medium text-center transition duration-300">
+                Contact Our PR Team
+            </a>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script>
+        feather.replace();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

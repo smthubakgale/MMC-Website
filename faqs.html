@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - MediCare Pulse</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+</head>
+<body class="bg-gray-50">
+    <custom-navbar></custom-navbar>
+
+    <main class="container mx-auto px-4 py-20">
+        <!-- FAQ Hero -->
+        <section class="mb-16 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Frequently Asked Questions</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Find answers to common questions about our services</p>
+        </section>
+
+        <!-- FAQ Accordion -->
+        <section class="max-w-3xl mx-auto mb-16">
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-200">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left">
+                        <h3 class="text-xl font-medium">What are your operating hours?</h3>
+                        <i data-feather="chevron-down" class="transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-600">Our regular operating hours are Monday to Friday from 8:00 AM to 6:00 PM, and Saturdays from 9:00 AM to 2:00 PM. We are closed on Sundays and public holidays. For after-hours emergencies, please call our emergency line at (011) 234-5678.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-200">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left">
+                        <h3 class="text-xl font-medium">Do I need to make an appointment?</h3>
+                        <i data-feather="chevron-down" class="transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-600">While walk-ins are welcome, we highly recommend making an appointment to reduce waiting times. You can book appointments online through our website, via WhatsApp, or by calling our reception during business hours.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-200">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left">
+                        <h3 class="text-xl font-medium">What payment methods do you accept?</h3>
+                        <i data-feather="chevron-down" class="transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-600">We accept cash, all major credit/debit cards, EFT payments, and medical aid claims. For your convenience, we can also process payments through SnapScan and Zapper. A booking fee is required for all appointments.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-200">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left">
+                        <h3 class="text-xl font-medium">How do I get my prescription renewed?</h3>
+                        <i data-feather="chevron-down" class="transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-600">For chronic medication, we require an in-person or telemedicine consultation at least once every 6 months. You can request prescription renewals through our patient portal, by phone, or via WhatsApp. Please allow 48 hours for processing.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-200">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left">
+                        <h3 class="text-xl font-medium">Do you offer emergency services?</h3>
+                        <i data-feather="chevron-down" class="transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-600">We provide urgent care services during operating hours for non-life-threatening conditions. For true medical emergencies (chest pain, severe bleeding, difficulty breathing, etc.), please go directly to the nearest hospital emergency room or call emergency services.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-200">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left">
+                        <h3 class="text-xl font-medium">What should I bring to my first appointment?</h3>
+                        <i data-feather="chevron-down" class="transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-600">Please bring your ID/passport, medical aid card (if applicable), a list of current medications, and any relevant medical records. For new patients, we recommend arriving 15 minutes early to complete registration forms.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Still Have Questions -->
+        <section class="bg-gradient-to-r from-blue-500 to-teal-500 text-white rounded-xl p-8 text-center">
+            <h2 class="text-3xl font-bold mb-4">Still have questions?</h2>
+            <p class="text-xl mb-6 max-w-2xl mx-auto">Our team is ready to help with any additional questions you may have.</p>
+            <a href="pages/contact.html" class="inline-block bg-white text-blue-600 hover:bg-blue-50 px-8 py-3 rounded-lg font-medium text-center transition duration-300">Contact Us</a>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script>
+        feather.replace();
+        
+        // FAQ Accordion functionality
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

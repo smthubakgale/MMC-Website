@@ -24,6 +24,7 @@ class CustomNavbar extends HTMLElement {
           position: sticky;
           top: 0;
           z-index: 1020;
+          user-select:none;
         }
 
         .navbar.scrolled {
@@ -140,7 +141,7 @@ class CustomNavbar extends HTMLElement {
                 <a class="nav-link mx-2">About</a>
                 <ul class="dropdown-menu">
                   <li><a href="/about.html">About Us</a></li>
-                  <li><a href="/team.html">Our Team</a></li>
+                  <li><a href="/doctors.html">Our Team</a></li>
                 </ul>
               </li>
 
@@ -149,25 +150,19 @@ class CustomNavbar extends HTMLElement {
                 <ul class="dropdown-menu">
                   <li><a href="/services.html">All Services</a></li>
                   <li><a href="/pricing.html">Pricing / Packages</a></li>
-                  <li><a href="/faq.html">FAQ</a></li>
-                </ul>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link mx-2">Doctors</a>
-                <ul class="dropdown-menu">
-                  <li><a href="/doctors.html">All Specialists</a></li>
-                  <li><a href="/appointment.html">Book Appointment</a></li>
+                  <li><a href="/faqs.html">FAQ</a></li>
                 </ul>
               </li>
 
               <li class="nav-item dropdown">
                 <a class="nav-link mx-2">Blog</a>
                 <ul class="dropdown-menu">
-                  <li><a href="/blog.html">Articles</a></li>
+                  <li><a href="/blogs.html">Articles</a></li>
                   <li><a href="/news.html">News</a></li>
                 </ul>
               </li>
+
+              <li class="nav-item"><a class="nav-link mx-2" href="/contact.html"> Contact </a></li>
 
               <li class="nav-item ms-lg-3">
                 <a href="timetable.html" class="btn btn-primary">Book Now</a>
