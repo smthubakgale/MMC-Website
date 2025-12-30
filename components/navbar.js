@@ -142,6 +142,7 @@ class CustomNavbar extends HTMLElement {
                 <ul class="dropdown-menu">
                   <li><a href="/about.html">About Us</a></li>
                   <li><a href="/doctors.html">Our Team</a></li>
+                  <li><a href="/contact.html">Contact</a></li>
                 </ul>
               </li>
 
@@ -155,15 +156,27 @@ class CustomNavbar extends HTMLElement {
               </li>
 
               <li class="nav-item dropdown">
-                <a class="nav-link mx-2">Blog</a>
+                <a class="nav-link mx-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Blog
+                </a>
                 <ul class="dropdown-menu">
-                  <li><a href="/blogs.html">Articles</a></li>
-                  <li><a href="/news.html">News</a></li>
+                  <li><a class="dropdown-item" href="/blogs.html">Articles</a></li>
+                  <li><a class="dropdown-item" href="/news.html">News</a></li>
                 </ul>
               </li>
 
-              <li class="nav-item"><a class="nav-link mx-2" href="/contact.html"> Contact </a></li>
-
+              <li class="nav-item dropdown">
+                <a class="nav-link mx-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Policies
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/cookies.html">Cookies Policy</a></li>
+                  <li><a class="dropdown-item" href="/terms.html">Terms & Conditions</a></li>
+                  <li><a class="dropdown-item" href="/privacy.html">Privacy Policy</a></li>
+                  <li><a class="dropdown-item" href="/refund.html">Refund Policy</a></li>
+                </ul>
+              </li>
+ 
               <li class="nav-item ms-lg-3">
                 <a href="timetable.html" class="btn btn-primary">Book Now</a>
               </li>
